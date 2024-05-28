@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './App.css';
 import { Link, Outlet, useLocation} from "react-router-dom";
 import Search  from "./Search.js";
@@ -22,7 +22,7 @@ function Header () {
             <li><Link to='/cart' className={location.pathname === "/cart" ? "active" : ""}>Cart</Link></li>
             </ul>
             <button className="cart-button" id='cart-button'>
-             <Link to='./cart'>
+             <Link to='/cart'>
             <img className="img-logo" src={ImgLogo} alt='cart'/>
             <div className="cart-num" id='cart-num'>{getTotalQuantity()}</div>
             </Link>

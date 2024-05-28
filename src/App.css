@@ -35,12 +35,31 @@
 .item-description {
   border: 2px solid #d3d3d3;
   border-radius: 0 0 20px 20px;
-  height: 250px;
+  height: 265px;
 }
 .item-description p {
+  /* border: 2px solid blue; */
   max-width: 300px;
   padding-left: 10px;
 }
+
+.description-and-price {
+  /* border: 2px solid blue; */
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  /* border: 2px solid salmon; */
+  min-height: 75px;
+}
+
+.price {
+  /* border: 2px solid orange; */
+  margin-top: -5px;
+}
+
 /* .bagel-item p,
 .cocktail-item p,
 .burger-item p ,
@@ -81,8 +100,8 @@
 
 .top-of-main-page {
   /* border: 2px solid pink;  */
-  /* display: flex; */
-  /* flex-direction: column; */
+  /* display: flex;
+  flex-direction: column; */
   position: fixed;
   top: 0;
   left: 0;
@@ -102,49 +121,47 @@
   margin-left: 20px;
 }
 
-.header-link {
+/* .header-link {
   text-decoration: none;
   color: black;
-}
+} */
 
 .ul-of-header {
   position: relative;
-  top: -60px;
+  top: -70px;
   /* border: 2px solid pink; */
+  padding: 10px;
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  gap: 10px;
+  justify-content: center;
   color: black;
   list-style: none;
-
+  gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 /* .ul-of-header li {
   list-style: none;
-  border: 1px solid #d3d3d3;
   border-radius: 15px;
   padding: 5px 10px;
   font-weight: bold;
+  border: 1px solid #d3d3d3;
 } */
 
 .ul-of-header li:not(.active) a{
   text-decoration: none;
-  color: black;
   list-style: none;
-  border: 1px solid #d3d3d3;
+  color: #000;
   border-radius: 15px;
   padding: 5px 10px;
   font-weight: bold;
-
+  border: 1px solid #d3d3d3;
 }
 .active {
-  list-style: none;
-  border-radius: 15px;
-  padding: 5px 10px;
-  font-weight: bold;
   background-color: orange;
 }
+
 .content {
   padding-top: 110px;
 }
@@ -155,6 +172,7 @@
   align-items: center;
   padding-left: 5px;
   justify-content: space-between;
+  height: 125px;
 }
 .name-and-add-button h2 {
   width: 200px;
@@ -295,23 +313,36 @@
   font-size: 20px;
   font-weight: bold;
 } */
-.proceed-button {
-
+/* .proceed-button {
  position: absolute;
  margin-top: 50px;
  padding-bottom: 40px;
-}
+} */
 
-.proceed-button button {
+
+.payment-button {
+  /* position: absolute; */
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+.payment-button button {
   padding: 10px 50px;
   border-radius: 50px;
-  color: white;
-  background-color: black;
-  border: 2px solid black;
+  color: black;
+  background-color: orange;
+  border: 2px solid orange;
   font-size: 16px;
   font-weight: bold;
 }
 
+.payment-button button a {
+  text-decoration: none;
+  color: black;
+}
+
+.payment-button button:active {
+  box-shadow: 0 1px 2px 0 rgb(26 115 232 / 45%), 0 2px 6px 2px rgb(26 115 232 / 30%);
+}
 .modal{
   position: fixed;
   top: 50%;
@@ -395,128 +426,47 @@ button:hover {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 375px) {
-
-  .top-of-main-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    border-bottom: 2px solid #d3d3d3; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    height: 100px; /* Уменьшаем высоту для мобильных устройств */
-  }
-
-  .top-of-main-page h2 {
-    position: relative;
-    top: -30px;
-    color:black;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 20px;
-    padding-top: 20px;
-  }
- .search {
-  float: right;
-  padding-top: 10px;
-  padding-right: 10px;
-}
-
-.ul-of-header {
+.registration-form {
+  border: 1px solid  #d3d3d3;
+  background-color: #d3d3d3;;
+  width: 750px;
+  height: 420px;
+  margin: 50px auto;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  max-width: 375px;
-  overflow: scroll;
-  padding-bottom: 15px;
-}
-.ul-of-header li {
-  padding-top: 35px;
-  border-radius: 10px; /* Уменьшаем радиус скругления углов */
-  font-size: 14px; /* Уменьшаем размер шрифта */
-}
-.bagel-item img,
-.cocktail-item img,
-.burger-item img,
-.desserts-item img,
-.product-item img {
-  vertical-align: top;
-  width: 300px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-.item-description {
-  border: 2px solid #d3d3d3;
-  border-radius: 0 0 20px 20px;
-  height: 140px;
-}
-.item-description p {
-  /* border: 2px solid salmon; */
-  max-width: 250px;
-  padding-left: 10px;
-  font-size: 12px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.name-and-add-button {
-  /* border: 2px solid red;  */
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  padding-left: 5px;
-  justify-content: space-between;
-  vertical-align: top;
-}
-.name-and-add-button h2 {
-  width: 200px;
-  font-size: 17px;
-  padding-left: 5px;
-}
-
-.name-and-add-button button { 
-  cursor: pointer;
-  margin-right: 35px;
-  border: 1px solid orange;
-  background-color: orange;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-}
-
-.cart-button {
-    position: fixed;
-    top: 10px;
-    left: -70px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    border: none;
-    background-color:transparent;
-  }
-
-  .img-logo {
-    width: 30px;
-  }
-
-  .cart-num {
-  position: absolute;
-  background-color: #d62240;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  top: -7px;
-  right: 150px;
-  }
+}
+.form {
+  min-width: 40%;
+  padding-left: 50px;
+  /* border: 2px solid pink; */
+}
+
+.logoImg {
+  min-width: 40%;
+  padding-right: 50px;
+  /* border: 2px solid blue; */
+}
+.logoImg img {
+  max-width: 350px;
+  border-radius: 50%;
+}
+.form label {
+  font-size: 14px;
+}
+.form input {
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.form button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: bold;
 }

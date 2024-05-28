@@ -14,7 +14,7 @@ const Search = () => {
     setText(newText);
     handleSearch(newText);
   };
- 
+
   const clearSearch = () => {
     setText('');
     handleSearch('');
@@ -29,6 +29,7 @@ const Search = () => {
         placeholder="Search..."
         value={text}
         onChange={handleInputChange}
+  
         />
        <button className='search-button'><Link to="/search" className='search-link'>Search</Link></button>
       <button className='clear-button' onClick={clearSearch}>x</button>

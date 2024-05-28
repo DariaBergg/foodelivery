@@ -47,11 +47,11 @@ const Products = () => {
     const { searchText } = useSearch();
     // console.log("searchText:", searchText);
     const initialItems = [
-      { name: 'Old Fashioned cocktail', description: 'The Old Fashioned is a timeless cocktail that features a rich amber color from its whiskey or bourbon base', price: 205, image: OldFashionedImg },
-      { name: 'Fox Rainbow cocktail', description: 'The Fox River cocktail is a visually stunning drink that features a mesmerizing gradient of deep blue at the bottom, transitioning to a lighter green hue towards the top, reminiscent of a river meeting its lush banks.', price: 210, image: FoxRainBoxImg },
-      { name: 'Cloud Nine Dream cocktail', description: 'A sweet, whimsical creation that looks as magical as it tastes, perfect for special occasions or whenever you want to add a little fantasy to your day. ', price: 210, image: CloudNineDreamImg },
-      { name: 'Creamsicle sour cocktail', description: 'The Creamsicle Sour is a delightful blend of tangy and creamy flavors, reminiscent of the classic orange and cream popsicle. This cocktail combines the zesty brightness of fresh orange juice with the smooth richness of a cream liqueur, creating a beautiful balance of sour and sweet.', price: 180, image: CreamsicleSourImg },
-      { name: 'Bittersweet Symphony cocktail', description: 'This Bittersweet Symphony cocktail offers a delightful interplay of sweet and bitter flavors, making it an intriguing choice for those who appreciate depth and complexity in their drinks.', price: 275, image: BittersweetSymphonyImg },
+      { name: 'Old Fashioned cocktail', description: 'The Old Fashioned is a timeless cocktail that features a rich amber color from its whiskey base', price: 205, image: OldFashionedImg },
+      { name: 'Fox Rainbow cocktail', description: 'The Fox River cocktail is a visually stunning drink that features a mesmerizing gradient of deep blue at the bottom.', price: 210, image: FoxRainBoxImg },
+      { name: 'Cloud Nine Dream cocktail', description: 'A sweet, whimsical creation that looks as magical as it tastes, perfect for special occasions.', price: 210, image: CloudNineDreamImg },
+      { name: 'Creamsicle sour cocktail', description: 'The Creamsicle Sour is a delightful blend of tangy and creamy flavors.', price: 180, image: CreamsicleSourImg },
+      { name: 'Bittersweet Symphony cocktail', description: 'This Bittersweet Symphony cocktail offers a delightful interplay of sweet and bitter flavors.', price: 275, image: BittersweetSymphonyImg },
       { name: 'Plain bagel', description: 'the plain bagel does not include any additional toppings besides an egg or starch-wash for color.', price: 65, image: PlainBagelImg },
       { name: 'Egg bagel', description: 'this humble ingredient can actually elevate the flavor, texture, and color of a plain bagel', price: 70, image: EggBagelImg },
       { name: 'Sourdough bagel', description: 'Sourdough bagels have a much more distinct flavor than other bagels due to the use of a naturally-leavened culture of yeast and bacteria.', price: 65, image: SourdoughBagelImg },
@@ -75,15 +75,16 @@ const Products = () => {
     const [filteredItems, setFilteredItems] = useState([]);
 
     useEffect(() => {
-    const newFilteredItems = productItems.filter(item => item.name.toLowerCase().includes(searchText));
-    if (newFilteredItems.length > 0 || searchText === '') {
+    const newFilteredItems = productItems.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()));
+    // if (newFilteredItems.length > 0 ) {
     setFilteredItems(newFilteredItems);
-    }
+    // }
   }, [searchText, productItems]);
 
     return (
       <div className='results-text'>
-        {searchText===('') ? (
+        {
+        (searchText=== ''|| filteredItems.length === 0)  ? (
           <h2>Nothing has found</h2>
         ) : (
         <ProductsItems items={filteredItems} onAddToCart={onAddToCart}/>

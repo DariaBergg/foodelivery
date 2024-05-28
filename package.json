@@ -1,13 +1,14 @@
 {
   "name": "search-bar",
   "version": "0.1.0",
-  "homepage": "https://dariabergg.github.io/gh-pages",
-  "private": false,
+  "homepage": "https://dariabergg.github.io/foodelivery/",
+  "private": true,
   "dependencies": {
+    "@tarekraafat/autocomplete.js": "^10.2.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^6.1.1",
+    "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

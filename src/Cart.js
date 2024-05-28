@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useCart } from "./CartContext";
+import { Link } from "react-router-dom";
 import './App.css';
 
 function Cart () {
@@ -56,7 +57,7 @@ return (
                 <div id="overlay"></div> */}
             {/* </div> */}
             
-            <div className="proceed-button">
+            {/* <div className="proceed-button">
                         <button onClick={openModal}>Proceed to order {getTotalCost()} Kč</button>
             </div>
             {modalIsOpen && (
@@ -68,7 +69,11 @@ return (
                 </div>
             )}
 
-        {modalIsOpen && <div id="overlay"></div>}
+        {modalIsOpen && <div id="overlay"></div>} */}
+
+        <div className="payment-button">
+        <Link to='/registration-form'><button>Proceed to payment {getTotalCost()} Kč</button></Link>
+        </div>
     </div>
      )}
     </div>

@@ -1,0 +1,112 @@
+/* @media screen and (max-width: 620px) {
+   .top-of-main-page {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: flex-start;
+   }
+   
+   .cart-button {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+  }
+  .cart-num {
+    position: absolute;
+    background-color: #d62240;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    top: 270px;
+    right: 0;
+    }
+    /* .ul-of-header {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 10px;
+   } */
+  /* } */
+ 
+  /* @media screen and (width: 1024px) {
+    .bagel-item img,
+    .burger-item img,
+    .cocktail-item img,
+    .desserts-item img,
+    .cart-item img{
+      /* border: 2px solid red; */
+      /* max-height: 180px;
+    }
+  } */
+  
+  @media screen and (max-width: 825px) {
+  
+    .top-of-main-page  {
+    /* border: 2px solid red; */
+    /* display: flex;
+    flex-direction: column; */
+    height: 140px;
+    /*
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: flex-start; */
+  }
+  .bagel-menu, 
+  .cocktail-menu,
+  .burger-menu,
+  .desserts-menu,
+  .product-menu {
+    margin-top: 50px;
+  }
+  .top-of-main-page h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .ul-of-header {
+    padding: 10px;
+    margin-top: 50px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .cart-button {
+    position: fixed;
+    bottom: -550px;
+    right: 5px;
+  }
+  .cart-num {
+    position: absolute;
+    background-color: #d62240;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    top: 550px;
+    right: 0;
+    }
+  
+}
+
+@media screen and (max-width: 465px) {
+
+  .ul-of-header {
+    justify-content: left;
+    margin-top: 50px;
+    overflow-x: scroll;
+  }
+}

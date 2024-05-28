@@ -21,8 +21,10 @@ const CocktailItems = ({ items, onAddToCart }) => {
             <h2>{item.name}</h2>
             <button onClick={()=> onAddToCart(item)}> + </button>
             </div>
-            <p>{item.description}</p>
-            <p>Price: {item.price} Kč</p>
+            <div className='description-and-price'>
+            <p className='description'>{item.description}</p>
+            <p className='price'>Price: {item.price} Kč</p>
+            </div>
           </div>
           </div>
         ))}
