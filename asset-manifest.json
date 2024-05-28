@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/foodelivery/static/css/main.fa17961f.css",
+    "main.js": "/foodelivery/static/js/main.a2bddd60.js",
+    "static/js/453.87bbcfae.chunk.js": "/foodelivery/static/js/453.87bbcfae.chunk.js",
+    "static/media/misterBacon.png": "/foodelivery/static/media/misterBacon.ce77fb6346a96af45b8c.png",
+    "static/media/mistercheese.png": "/foodelivery/static/media/mistercheese.83255365f29effbfd25a.png",
+    "static/media/mistervegan.png": "/foodelivery/static/media/mistervegan.6e020aee7b2dc904c45d.png",
+    "static/media/misterSuperBacon.png": "/foodelivery/static/media/misterSuperBacon.30335e45d694e77da048.png",
+    "static/media/misterChicken.png": "/foodelivery/static/media/misterChicken.14d22c98536deaf77718.png",
+    "static/media/logo-foodelivery.jpeg": "/foodelivery/static/media/logo-foodelivery.2669a8e83187c1b7fca6.jpeg",
+    "static/media/blueberry-bagel.jpeg": "/foodelivery/static/media/blueberry-bagel.a1ddf1361ce98e373395.jpeg",
+    "static/media/sourdough-bagel.jpeg": "/foodelivery/static/media/sourdough-bagel.d09664a7fa8ab9f83038.jpeg",
+    "static/media/creme-brule.jpeg": "/foodelivery/static/media/creme-brule.2bc94fb24280c358eab6.jpeg",
+    "static/media/pumpernickel-bagel.jpeg": "/foodelivery/static/media/pumpernickel-bagel.17828ff00eaa797b6a79.jpeg",
+    "static/media/tiramisu.jpeg": "/foodelivery/static/media/tiramisu.e1dd0f2a6996aedcdae3.jpeg",
+    "static/media/pastel-de-nata.jpeg": "/foodelivery/static/media/pastel-de-nata.220c8ce7fc34f60fe1b0.jpeg",
+    "static/media/old-fashioned.jpeg": "/foodelivery/static/media/old-fashioned.27eb0013cb68724772fd.jpeg",
+    "static/media/ Bittersweet-symphony.jpeg": "/foodelivery/static/media/ Bittersweet-symphony.158fe00dfb16d267a328.jpeg",
+    "static/media/pistacio-icecream.jpeg": "/foodelivery/static/media/pistacio-icecream.4eacd589c65f81cae2be.jpeg",
+    "static/media/plain-bagel.jpeg": "/foodelivery/static/media/plain-bagel.f6b22459d20c74eddb64.jpeg",
+    "static/media/Creamsicle-sour.jpeg": "/foodelivery/static/media/Creamsicle-sour.866fc96d167f8c49721e.jpeg",
+    "static/media/egg-bagel.jpeg": "/foodelivery/static/media/egg-bagel.5e3635f0386c5d16eb65.jpeg",
+    "static/media/fox-rainbow.jpeg": "/foodelivery/static/media/fox-rainbow.19f12e0173815ce72c14.jpeg",
+    "static/media/pana-cota.jpeg": "/foodelivery/static/media/pana-cota.4b86bd6c3282397daa76.jpeg",
+    "static/media/Cloud-nine-dream.jpeg": "/foodelivery/static/media/Cloud-nine-dream.a5d98a9482e7a6a72dea.jpeg",
+    "static/media/shopping-bag.png": "/foodelivery/static/media/shopping-bag.9595e27198cab2c971cb.png",
+    "index.html": "/foodelivery/index.html",
+    "main.fa17961f.css.map": "/foodelivery/static/css/main.fa17961f.css.map",
+    "main.a2bddd60.js.map": "/foodelivery/static/js/main.a2bddd60.js.map",
+    "453.87bbcfae.chunk.js.map": "/foodelivery/static/js/453.87bbcfae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa17961f.css",
+    "static/js/main.a2bddd60.js"
+  ]
+}
