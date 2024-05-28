@@ -1,7 +1,7 @@
 {
   "name": "foodelivery",
   "version": "0.1.0",
-  "homepage": "https://dariabergg.github.io/foodelivery/",
+  "homepage": "https://dariabergg.github.io/foodelivery",
   "private": true,
   "dependencies": {
     "@tarekraafat/autocomplete.js": "^10.2.7",
